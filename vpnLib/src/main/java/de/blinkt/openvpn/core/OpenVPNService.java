@@ -324,7 +324,7 @@ public class OpenVPNService extends VpnService implements StateListener, Callbac
         nbuilder.setContentText(msg);
         nbuilder.setOnlyAlertOnce(true);
         nbuilder.setOngoing(true);
-        //Change Notification icon
+        
         nbuilder.setSmallIcon(R.drawable.ic_launcher);
         if (status == LEVEL_WAITING_FOR_USER_INPUT) {
             PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
